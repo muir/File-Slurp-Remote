@@ -10,7 +10,7 @@ use Carp;
 use strict;
 use warnings;
 
-our $VERSION = 0.41;
+our $VERSION = 0.42;
 
 use strict;
 
@@ -90,7 +90,9 @@ tie our %line_numbers, 'Tie::Function::Examples',
 		return join("\n", map { sprintf("%-4d%s", $c++, $_) } @x);
 	};
 
-# -------------------------------
+# 
+#
+#
 
 sub TIEHASH
 {
@@ -219,6 +221,9 @@ Add line numbers to a block of text.
 
 =head1 LICENSE
 
+Copyright (C) 2008-2007,2008-2010 David Sharnoff.
+Copyright (C) 2007-2008 SearchMe Inc.
+Copyright (C) 2011 Google Inc.
 This package may be used and redistributed under the terms of either
 the Artistic 2.0 or LGPL 2.1 license.
 

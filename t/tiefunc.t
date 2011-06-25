@@ -3,9 +3,6 @@
 use Tie::Function::Examples qw(%thoucomma %nothoucomma %addcents %q_shell %round %sprintf);
 use Test::More qw/no_plan/;
 
-#
-# These test cases copied from work copyrighted by David Sharnoff
-#
 for my $line (split(/\n/,<<'END_DATA')) {
 	"$thoucomma{7000}"				7,000
 	$thoucomma{700}					700

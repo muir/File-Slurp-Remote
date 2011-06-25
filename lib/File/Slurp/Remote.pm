@@ -12,6 +12,9 @@ use File::Temp qw(tempdir);
 
 our @ISA = qw(Exporter);
 our @EXPORT = (@File::Slurp::EXPORT, qw(write_remote_file read_remote_file));
+
+our $VERSION = 0.42;
+
 my $tmpdir = tempdir(CLEANUP => 1);
 
 our $scp = "scp -q -o StrictHostKeyChecking=no -o BatchMode=yes -o PasswordAuthentication=no";
@@ -71,6 +74,9 @@ C<$File::Slurp::Remote::SmartOpen::ssh>.
 
 =head1 LICENSE
 
+Copyright (C) 2008-2007,2008-2010 David Sharnoff.
+Copyright (C) 2007-2008 SearchMe Inc.
+Copyright (C) 2011 Google Inc.
 This package may be used and redistributed under the terms of either
 the Artistic 2.0 or LGPL 2.1 license.
 

@@ -1,3 +1,9 @@
+= 2011/06/15 - 0.42
+
+Add File::Slurp::Remote::CanonicalHostnames.  It is tested by
+the regression suite in Proc::JobQueue.
+
+= 2009/09/25 - 0.41
 
 = 2009/08/03 - 0.4 
 
